@@ -176,7 +176,7 @@ with st.sidebar:
     )
     model_name = st.text_input(
         "Select Model", 
-        value = "openai/gpt-oss-20b", index=0
+        value = "openai/gpt-oss-20b"
     )
     st.divider()
 
