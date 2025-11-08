@@ -174,8 +174,9 @@ with st.sidebar:
         "Groq API Key", type="password", help="Get your key from https://console.groq.com/keys",
         value=os.environ.get("GROQ_API_KEY", "")
     )
-    model_name = st.selectbox(
-        "Select Model", ["llama3-70b-8192", "llama3-8b-8192", "mixtral-8x7b-32768"], index=0
+    model_name = st.text_input(
+        "Select Model", 
+        value = "openai/gpt-oss-20b", index=0
     )
     st.divider()
 
